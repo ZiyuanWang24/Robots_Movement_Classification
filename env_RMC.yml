@@ -13,3 +13,6 @@ dependencies:
     - tqdm
     - wheel
     - matplotlib
+    - pandas
+    - seaborn
+    - sklearn
