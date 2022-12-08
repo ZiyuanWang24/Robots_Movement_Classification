@@ -5,6 +5,7 @@ dependencies:
   - python=3.9
   - numpy>=1.23
   - jupyter
+  - scikit-learn
   - pip
   - pip:
     - gym[classic_control]>=0.26
