@@ -9,6 +9,24 @@ This software could be used in some of the storage. Like shipping storage, there
 Similarly, any industry that uses a robot running in some fixed routes, can locate their robots depend on our software.
 
 ## Repository Structure
+ ```
+.
+├── DATA
+│   ├── sensor_readings_24.csv
+│   └── sensor_readings_4.csv
+├── doc
+│   └── presentation.ipynb
+├── draft_code
+│   ├── SVM_GaussianGNB_data24.ipynb
+│   ├── SVM_GaussianGNB_data4.ipynb
+│   └── neuralnet_lineaerclassifer.py
+├── src
+│   └── Classifiers.py
+├── LICENSE
+├── README.md
+├── RMC_ENV_SETUP.bash
+└── env_RMC.yml
+ ```
 
 ## Enviroment Setup
 ```
