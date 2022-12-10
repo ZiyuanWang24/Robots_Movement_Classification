@@ -8,6 +8,10 @@ Our software will identify the automotive vehicle direction. During the road tes
 
 Our softwre is used to analyze the test data to print out the rotating direction, this result experiment direction will also be used to compare with the setting direction to improve the original route plan of the autopilot.
 
-# User stories and Use Case
+# User stories
 
-1. A food delievery company would like to test their foo
+1. A food delievery company would like to improve their new autopolit food delievery robot. After they have received their first running data. they could upload their distance sensor detecting data, they will get a result of a suggest direction to compate with the origional rout mapping to design a better route.
+
+2. A storage manager would like to increase the size of their storage, so they have to redesign their robotic moving path. based on the shelf location and the distance between each shelf. they could uploda the data to have the result of the turning direction for the rebotic.
+
+3. An autopilot testing engineer would like to get the feedback of their new sensor. after the testing in the setting route path they could upload their distance or supersoud data during the turing, they could get a output of the turning direction.
