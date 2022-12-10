@@ -38,3 +38,4 @@ class svm_test(unittest.TestCase):
             SVM_learning(datasets3)
     
 
+
