@@ -19,3 +19,5 @@ def SVM_learning(datasets):
     y_pred_test = classifier.predict(xtest)
     y_pred_train = classifier.predict(xtrain)
     return y_pred_test
+
+    
