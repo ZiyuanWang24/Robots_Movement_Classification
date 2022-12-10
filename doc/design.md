@@ -15,3 +15,9 @@ Our softwre is used to analyze the test data to print out the rotating direction
 2. A storage manager would like to increase the size of their storage, so they have to redesign their robotic moving path. based on the shelf location and the distance between each shelf. they could uploda the data to have the result of the turning direction for the rebotic.
 
 3. An autopilot testing engineer would like to get the feedback of their new sensor. after the testing in the setting route path they could upload their distance or supersoud data during the turing, they could get a output of the turning direction.
+
+# User case
+
+1. user will uopload their distance or supersound data (.CSV) to the XXX
+2. based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.
+3. The result will be print out.
