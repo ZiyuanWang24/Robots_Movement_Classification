@@ -1,6 +1,9 @@
 # Robots Movement Classification
 This tool can be used to determine the position and orientation direction based on the information provided by sensors.
 
+## Mission
+Mission of our software was to predict the movement of the user's robot, so users can get the location of their robots, or even design a route for robots.
+
 ## Project objective
 The project is to use the ultrasound sensor data or distance reading data of the wall-followed robot to train a model. The model can be used to determine the position and orientation direction based on the data analyzed. We will try different machine learning algorithm and find out a model that has better prediction.
 
