@@ -9,7 +9,7 @@ from src import SVM_learning
 from src import knnclassifier
 
 
-class svm_test(unittest.TestCase):
+class test(unittest.TestCase):
     
     def test_smoke(self):
         datasets1 = pd.read_csv('/Users/a1/ME583/Robots_Movement_Classification/data/sensor_readings_4.csv')
