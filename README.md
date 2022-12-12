@@ -1,5 +1,5 @@
 # Robots Movement Classification
-This tool can be used to determine the position and orientation direction based on the information provided by sensors.
+This tool can be used to determine the position and orientation direction based on the data detected by sensors.
 
 ## Mission
 Mission of our algorithm was to predict the movement of the user's robot, so users can get the turning dirtion for their robots at specific corner, or even design a route for robots.
