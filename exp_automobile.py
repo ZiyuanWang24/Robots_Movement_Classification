@@ -948,7 +948,7 @@ if __name__ == "__main__":
         CYAN = '\033[36m'
         MAGENTA = '\033[35m'
 
-        model_select = input(f'\n{CYAN}Model (GNB, NN, SVM, LR): ')
+        model_select = input(f'\n{CYAN}Model (GNB, NN, SVM, LR, KNN): ')
         if model_select == 'GNB':
             model = joblib.load('src/saved_model/GaussianNB.pkl')
         elif model_select == 'SVM':
@@ -957,6 +957,8 @@ if __name__ == "__main__":
             model = joblib.load('src/saved_model/NeuralNet.pkl')
         elif model_select == 'LR':
             model = joblib.load('src/saved_model/linear_model.pkl')
+        elif model_select == 'KNN':
+            model = joblib.load('src/saved_model/KnnClassifier.pkl')
         else:
             print(f'\n{CYAN}Default: NN')
             model = joblib.load('src/saved_model/NeuralNet.pkl')
