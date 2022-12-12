@@ -81,7 +81,7 @@ class robots_movement_classifier():
         self.Linclassifier.fit(self.X_train, self.y_train)
         y_pred_test = self.Linclassifier.predict(self.X_test)
         self.Lin_cm = confusion_matrix(self.y_test,y_pred_test)
-        self.LIn_ac = float(self.Lin_cm.diagonal().sum())/len(self.y_test)
+        self.Lin_ac = float(self.Lin_cm.diagonal().sum())/len(self.y_test)
         return self.Lin_cm, self.Lin_ac, self.Linclassifier
     def NeuralNet_Classifier(self):
         self.NNetclassifier = MLPClassifier()

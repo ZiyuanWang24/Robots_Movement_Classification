@@ -937,6 +937,7 @@ if __name__ == "__main__":
                 a[0] = 1.0
             s, r, terminated, truncated, info = env.step(a)
             steps += 1
+            time.sleep(0.1)
         a[0] = 0
         a[2] = 1.0
         time.sleep(3)
@@ -948,8 +949,8 @@ if __name__ == "__main__":
     # while env_continue:
     #     if turn_end:
     #         _env_continue = input('Continue (True or False): ')
-    model = joblib.load('saved_model/linear_model.pkl')
-    print(model.predict(np.array([[1.687, 0.445, 2.332, 0.429]])))
+    # model = joblib.load('saved_model/linear_model.pkl')
+    # print(model.predict(np.array([[1.687, 0.445, 2.332, 0.429]])))
     left_dis = input('Left Distance: ')
     right_dis = input('Right Distance: ')
     up_dis = input('Up Distance: ')
