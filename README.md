@@ -113,5 +113,5 @@ iii.	The third one contains only the front and left simplified distances and the
 
 <img src="doc/img/Datasets.png" height="322" width="780" align=right></img>
 
-These datasets were downlaoded from the UCI Machine Learning Repository
+##### These datasets were downlaoded from the UCI Machine Learning Repository
 Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. 
