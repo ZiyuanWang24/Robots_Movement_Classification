@@ -55,7 +55,7 @@ The Ridge regressor has a classifier variant: RidgeClassifier. This classifier f
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers’ detection.
 ### 3.	KNN Classification: 
 Neighbors-based classification is a type of instance-based learning or non-generalizing learning: it does not attempt to construct a general internal model, but simply stores instances of the training data. Classification is computed from a simple majority vote of the nearest neighbors of each point: a query point is assigned the data class which has the most representatives within the nearest neighbors of the point.
-# 4.	Neutral Network:
+### 4.	Neutral Network:
 Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. Their name and structure are inspired by the human brain, mimicking the way that biological neurons signal to one another.
 ### 5.	Gaussian Naive Bayes:
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
