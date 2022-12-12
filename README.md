@@ -48,15 +48,15 @@ conda activate env_RMC
 
 Different machine learning algorithms will have different effects on different projects, so we tested five possible machine learning algorithms. The five algorithms are:
 
-# 1.	Linear Classification: 
+### 1.	Linear Classification: 
 The Ridge regressor has a classifier variant: RidgeClassifier. This classifier first converts binary targets to {-1, 1} and then treats the problem as a regression task, optimizing the same objective as above. The predicted class corresponds to the sign of the regressor’s prediction. For multiclass classification, the problem is treated as multi-output regression, and the predicted class corresponds to the output with the highest value.
-# 2.	Support Vector Machine: 
+### 2.	Support Vector Machine: 
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers’ detection.
-# 3.	KNN Classification: 
+### 3.	KNN Classification: 
 Neighbors-based classification is a type of instance-based learning or non-generalizing learning: it does not attempt to construct a general internal model, but simply stores instances of the training data. Classification is computed from a simple majority vote of the nearest neighbors of each point: a query point is assigned the data class which has the most representatives within the nearest neighbors of the point.
 # 4.	Neutral Network:
 Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. Their name and structure are inspired by the human brain, mimicking the way that biological neurons signal to one another.
-# 5.	Gaussian Naive Bayes:
+### 5.	Gaussian Naive Bayes:
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
 
 <img src="doc/img/MLComparison.png" height="711" width="705" align=right></img>
@@ -72,8 +72,8 @@ i.	The first one contains the raw values of the measurements of all 24 ultrasoun
 ii.	The second one contains four sensor readings named 'simplified distances' and the corresponding class label l (Moving forward, turning left, etc). These simplified distances are referred to as the 'front distance', 'left distance', 'right distance' and 'back distance'. They consist, respectively, of the minimum sensor readings among those within 60 degree arcs located at the front, left, right and back parts of the robot.
 iii.	The third one contains only the front and left simplified distances and the corresponding class labell (Moving forward, turning left, etc).
 
-# Content
-#File sensorreadings24.csv:
+### Content
+#### File sensorreadings24.csv:
 •	US1: ultrasound sensor at the front of the robot (reference angle: 180°) - (numeric: real)
 •	US2: ultrasound reading (reference angle: -165°) - (numeric: real)
 •	US3: ultrasound reading (reference angle: -150°) - (numeric: real)
@@ -100,13 +100,13 @@ iii.	The third one contains only the front and left simplified distances and the
 •	US24: ultrasound reading (reference angle: 165°) - (numeric: real)
 •	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 
-# File: sensorreadings4.csv:
+#### File: sensorreadings4.csv:
 •	SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
 •	SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
 •	SD_right: minimum sensor reading within a 60 degree arc located at the right of the robot - (numeric: real)
 •	SD_back: minimum sensor reading within a 60 degree arc located at the back of the robot - (numeric: real)
 •	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
-# File: sensorreadings2.csv:
+#### File: sensorreadings2.csv:
 •	SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
 •	SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
 •	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
