@@ -1,4 +1,5 @@
 # Robots Movement Classification
+<img src="doc/img/settingpath.png" height="200" width="300" align=right></img>
 This tool can be used to determine the position and orientation direction based on the data detected by sensors.
 
 ## Mission
