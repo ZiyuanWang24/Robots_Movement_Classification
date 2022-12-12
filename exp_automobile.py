@@ -7,6 +7,9 @@ import numpy as np
 import matplotlib.path as mpltPath
 import matplotlib.pyplot as plt
 import time
+import colorama
+
+from colorama import Fore,Style,Back
 
 import gym
 from gym import spaces
@@ -617,10 +620,10 @@ class CarRacing(gym.Env, EzPickle):
         c_x, c_y = self.car.hull.position
         c_angle = self.car.hull.angle
         center_point = [c_x, c_y]
-        up_point = [c_x - self.updis * np.sin(c_angle), c_y + self.updis * np.cos(c_angle)]
-        down_point = [c_x + self.downdis * np.sin(c_angle), c_y - self.downdis * np.cos(c_angle)]
-        left_point = [c_x - self.leftdis * np.cos(c_angle), c_y - self.leftdis * np.sin(c_angle)]
-        right_point = [c_x + self.rightdis * np.cos(c_angle), c_y + self.rightdis * np.sin(c_angle)]
+        up_point = [c_x - 10*self.updis * np.sin(c_angle), c_y + 10*self.updis * np.cos(c_angle)]
+        down_point = [c_x + 10*self.downdis * np.sin(c_angle), c_y - 10*self.downdis * np.cos(c_angle)]
+        left_point = [c_x - 10*self.leftdis * np.cos(c_angle), c_y - 10*self.leftdis * np.sin(c_angle)]
+        right_point = [c_x + 10*self.rightdis * np.cos(c_angle), c_y + 10*self.rightdis * np.sin(c_angle)]
         points = [up_point, down_point, left_point, right_point, center_point]
         for i in range(4):           
             self._draw_colored_line(self.surf, center_point, points[i], red, zoom, translation, angle, distances[i])
@@ -734,7 +737,8 @@ class CarRacing(gym.Env, EzPickle):
             gfxdraw.line(surface, int(poly[0][0]), int(poly[0][1]), int(poly[1][0]), int(poly[1][1]), color)
 
         font = pygame.font.Font(pygame.font.get_default_font(), 10)
-        text = font.render("%04i" % Num, True, (255, 255, 255), (0, 0, 0))
+        # text = font.render("%04i" % Num, True, (255, 255, 255), (0, 0, 0))
+        text = font.render(str(Num), True, (255, 255, 255), (0, 0, 0))
         text = pygame.transform.rotate(text, 180)
         text = pygame.transform.flip(text, True, False)
         text_rect = text.get_rect()
@@ -783,26 +787,11 @@ class CarRacing(gym.Env, EzPickle):
         arc0 = self.car.hull.angle
         arc1 = arc0 + T_func[3]
         velocity = 10
-        # arc_samples = np.linspace(arc0, arc1, num = int(np.ceil((arc1 - arc0) * R)))  # number of samples = arc length by the number of pixels
-        # traj_samples = np.array(
-        #     [[a + R * np.cos(arc), b + R * np.sin(arc)] for arc in arc_samples])  # discrete samples on the trajectory
-
-        # plt.plot(*zip(*self.track_boundary[0]), 'b')
-        # plt.plot(*zip(*self.track_boundary[1]), 'r')
-        # plt.plot([traj_pt[0] for traj_pt in traj_samples], [traj_pt[1] for traj_pt in traj_samples])
-        # plt.draw()
-        # plt.pause(2)
-        # print(len(traj_samples))
-
-        # Check if the trajectory exceeds track. Deduct 100 points if so
         within_track = True
         idx_sample = 0
 
         while within_track:
             traj_pt = traj_samples[idx_sample]
-            # print(self.car.hull.position)
-            # print(traj_pt - PLAYFIELD)
-            # print(self.track_bwmask[(traj_pt[1], traj_pt[0])])
 
             inner_path = mpltPath.Path(self.track_boundary[0])
             outer_path = mpltPath.Path(self.track_boundary[1])
@@ -920,6 +909,7 @@ if __name__ == "__main__":
                 a[0] = -1.0
             s, r, terminated, truncated, info = env.step(a)
             steps += 1
+            time.sleep(0.1)
         a[0] = 0
         a[2] = 1.0
         time.sleep(3)
@@ -949,29 +939,54 @@ if __name__ == "__main__":
     # while env_continue:
     #     if turn_end:
     #         _env_continue = input('Continue (True or False): ')
-    # model = joblib.load('saved_model/linear_model.pkl')
-    # print(model.predict(np.array([[1.687, 0.445, 2.332, 0.429]])))
-    left_dis = input('Left Distance: ')
-    right_dis = input('Right Distance: ')
-    up_dis = input('Up Distance: ')
-    down_dis = input('Down Distance: ')
+    def determineDir():
+
+        colorama.init()
+
+        YELLOW = "\x1b[1;33;40m" 
+        RED = "\x1b[1;31;40m"
+        CYAN = '\033[36m'
+        MAGENTA = '\033[35m'
+
+        model_select = input(f'\n{CYAN}Model (GNB, NN, SVM, LR): ')
+        if model_select == 'GNB':
+            model = joblib.load('src/saved_model/GaussianNB.pkl')
+        elif model_select == 'SVM':
+            model = joblib.load('src/saved_model/SVMcalssifier.pkl')
+        elif model_select == 'NN':
+            model = joblib.load('src/saved_model/NeuralNet.pkl')
+        elif model_select == 'LR':
+            model = joblib.load('src/saved_model/linear_model.pkl')
+        else:
+            print(f'\n{CYAN}Default: NN')
+            model = joblib.load('src/saved_model/NeuralNet.pkl')
+        
+        # print(model.predict(np.array([[1.687, 0.445, 2.332, 0.429]])))
+        env.updis = up_dis = float(input(f'\n{MAGENTA}Up Distance: '))
+        env.leftdis = left_dis = float(input(f'\n{MAGENTA}Left Distance: '))
+        env.rightdis = right_dis = float(input(f'\n{MAGENTA}Right Distance: '))
+        env.downdis = down_dis = float(input(f'\n{MAGENTA}Down Distance: '))
+        dir = model.predict(np.array([[up_dis, left_dis, right_dis, down_dis]]))
+        print(dir)
+        return dir
+    dir = determineDir()
+    # dir = model.predict(np.array([[1.687, 0.445, 2.332, 0.429]]))
     go_straight(10)
 
     quit = False
     while True:
-        # Turn left
-        turn_right()
+        if dir == 'Slight-Right-Turn' or dir == 'Sharp-Right-Turn':
+            turn_right()
+        elif dir == 'Slight-Left-Turn':
+            turn_left()
+        elif dir == 'Move-Forward':
+            go_straight(30)
 
         env.reset()
         
-        # 1.687	0.445	2.332	0.429
-        left_dis = input('Left Distance: ')
-        right_dis = input('Right Distance: ')
-        up_dis = input('Up Distance: ')
-        down_dis = input('Down Distance: ')
-        
-        
-        stop = input('Stop (True or False): ')
+        dir = determineDir()
+        RED = "\x1b[1;31;40m"
+        stop = input(f'\n{RED}Stop (True or False): ')
         if stop == 'True':
             break
         go_straight(10)
