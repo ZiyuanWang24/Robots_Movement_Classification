@@ -92,7 +92,7 @@ The distances will show on the simulation as well.\
 
 ### Step 4
 The car in the simulation will move based on the determined action.\
-<img src="doc/img/step3_turnleft.png" height="200" width="350" align=right></img>
+<img src="doc/img/step3_turnleft.png" height="200" width="350" align=center></img>
 
 ## About Datasets:
 •	The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 
