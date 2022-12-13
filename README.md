@@ -1,17 +1,17 @@
 # Robots Movement Classification
 <img src="doc/img/settingpath.png" height="200" width="300" align=right></img>
-This tool can be used to determine the position and orientation direction based on the data detected by sensors.
+The project compared five different clssification algorithms to train a model that can predict the robots movement by processing the ultrasound sensors data. The model can be further implemented on Simultaneous Localization and Mapping (SLAM) and Motion Planning of the autopilot vehicle.  
 
 ## Mission
-Mission of our algorithm was to predict the movement of the user's robot, so users can get the turning dirtion for their robots at specific corner, or even design a route for robots.
+The mission of the project is to find a clssification algorithm that can achieve high accuracy on robots movement classification problem. 
 
-## Project objective
+## Project Objective
 
-Our algorithm will identify the automotive vehicle direction. During the designing of the autopilot vehicle’s road mapping. Engineers could collect the car’s distance or super sound sensor data at turning corners. Based on the data analyzed, the suggested turning direction will be printed out. 
+Our algorithm will identify the automotive vehicle direction. During the designing of the autopilot vehicle’s road mapping. Engineers could collect the car’s distance or ultrasound sensor data at turning corners. The suggested turning direction is then determined based on the data. 
 
-The algorithm is to use the ultrasonic sensor data or distance reading data from the wall-followed robot to train different models. The machine learning model can be used to determine the position and orientation direction. After training and comparing different machine learning models then choose the model that has the highest prediction.
+The algorithm is to use the ultrasonic sensor data or distance reading data from the wall-followed robot to train different models. The trained model can be used to determine the position and orientation direction. The model that has the highest prediction accuracy is selected after comparing the results of different machine learning models.
 
-This algorithm could be used in some of the storage. Like shipping storage, there will be some of the autopilot robotics designed to deliver with the setting path. Based on the data collection, the storage manager could have the direction printed out to determine if the automotive vehicle followed the setting or not. Similarly, any industry that uses a robot running in some fixed routes, can locate their robots depend on our software.
+One of use case is smart warehouse. There are autopilot robotics designed to deliver package with the setting path. Based on the data collection, the monitoring system could have the direction predicted by the classification model to determine if the automotive vehicle followed the setting or not. Similarly, any industry that uses a robot running in some fixed routes, can locate their robots depend on our trained model.
 
 ## Repository Structure
  ```
