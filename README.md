@@ -59,7 +59,6 @@ Neighbors-based classification is a type of instance-based learning or non-gener
 Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. Their name and structure are inspired by the human brain, mimicking the way that biological neurons signal to one another.
 ### 5.	Gaussian Naive Bayes:
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
-
 <img src="doc/img/MLComparison.png" height="356" width="352" align=center></img>
 
 <img src="doc/img/63a3efed70523fc6b66f1cab0703cf2.png" height="200" width="1000" align=center></img>
