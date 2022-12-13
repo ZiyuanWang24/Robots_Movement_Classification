@@ -105,11 +105,13 @@ The car in the simulation will move based on the determined action.\
 <img src="doc/img/step3_turnleft.png" height="200" width="350" align=center></img>
 
 ## About Datasets:
+<img src="doc/img/Scitos-G5-with-its-Human-Machine-Interface-and-RoboHead-in-the-institute-computer.png" height="300" width="150" align=right></img>
 •	The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 rounds. To navigate, the robot uses 24 ultrasound sensors arranged circularly around its "waist". The numbering of the ultrasound sensors starts at the front of the robot and increases in clockwise direction.\
 •	The provided files comprise three diferent data sets.\
   i.	The first one contains the raw values of the measurements of all 24 ultrasound sensors and the corresponding class label (Moving forward, turning left, etc). Sensor readings are sampled at a rate of 9 samples per second.\
   ii.	The second one contains four sensor readings named 'simplified distances' and the corresponding class label l (Moving forward, turning left, etc). These simplified distances are referred to as the 'front distance', 'left distance', 'right distance' and 'back distance'. They consist, respectively, of the minimum sensor readings among those within 60 degree arcs located at the front, left, right and back parts of the robot.\
   iii.	The third one contains only the front and left simplified distances and the corresponding class labell (Moving forward, turning left, etc).
+
 
 ### Content
 #### File sensorreadings24.csv:
