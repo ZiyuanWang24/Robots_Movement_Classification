@@ -173,4 +173,5 @@ We look forward to continually improving the program, so if you encounter any bu
 If you expect to continue applying our program with different inputs (e.g. more accurate sensors), please give us your feedback! Detail your requirements in this [link] (https://forms.gle/wNQvTH98ypNPXhJ38) and attach the necessary training data.
 ### Contributions
 [1] Car animation source code： https://www.gymlibrary.dev/environments/box2d/car_racing/
+
 [2] A. L. Freire, G. A. Barreto, M. Veloso and A. T. Varela, "Short-term memory mechanisms in neural network learning of robot navigation tasks: A case study," 2009 6th Latin American Robotics Symposium (LARS 2009), 2009, pp. 1-6, doi: 10.1109/LARS.2009.5418323.
