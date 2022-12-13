@@ -4,7 +4,7 @@
 # In[1]:
 
 
-def NNetclassifier(dataset):
+def NNetclassifier(datasets):
     X = datasets.iloc[:, [0,1,2,3]].values
     y = datasets.iloc[:, -1].values
     from sklearn.preprocessing import LabelEncoder
@@ -21,7 +21,7 @@ def NNetclassifier(dataset):
     classifier.fit(X_train, y_train)
     y_pred = classifier.predict(X_test)
     return y_pred
-def Linclassifier(dataset):
+def Linclassifier(datasets):
     X = datasets.iloc[:, [0,1,2,3]].values
     y = datasets.iloc[:, -1].values
     from sklearn.preprocessing import LabelEncoder
