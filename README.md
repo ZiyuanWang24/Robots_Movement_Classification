@@ -77,8 +77,8 @@ Run the example python script.
 python3 python3 exp_automobile.py
 ```
 ### Step 2
-Select one of the trained models.
-GNB: Gaussian Naive Bayes.
+Select one of the trained models.\
+GNB: Gaussian Naive Bayes.\
 NN: Neural Network.
 SVM: Support Vector Machines.
 LR: Linear Regression.
