@@ -19,18 +19,28 @@ One of use case is smart warehouse. There are autopilot robotics designed to del
 ├── DATA
 │   ├── sensor_readings_24.csv
 │   └── sensor_readings_4.csv
+│   └── sensor_readings_2.csv
 ├── doc
-│   └── presentation.ipynb
+│   ├── design.md
+│   └── Comparison_of_classifiers.pdf
+│   └── img
 ├── draft_code
 │   ├── SVM_GaussianGNB_data24.ipynb
 │   ├── SVM_GaussianGNB_data4.ipynb
 │   └── neuralnet_lineaerclassifer.py
 ├── src
+│   ├── __init__.py
 │   └── Classifiers.py
+│   └── knn.py
+│   └── svm.py
+│   └── saved_model
+├── test
 ├── LICENSE
 ├── README.md
 ├── RMC_ENV_SETUP.bash
-└── env_RMC.yml
+├── env_RMC.yml
+├── exp_automobile.py
+└── Comparison_of_classifiers.ipynb
  ```
 
 ## Enviroment Setup
