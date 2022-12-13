@@ -18,6 +18,6 @@ Our softwre is used to analyze the test data to print out the rotating direction
 
 # User case
 
-1. user will uopload their distance or supersound data (.CSV) to the XXX
+1. user will uopload their distance or supersound data (.CSV) to the algorithm
 2. based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.
 3. The result will be print out.
