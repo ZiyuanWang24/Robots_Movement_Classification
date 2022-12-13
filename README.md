@@ -138,9 +138,11 @@ Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 ###### Datasets Example in sensorreadings4.csv
 | SD_front |  SD_left  |  SD_right |  SD_back  |  Classes  |
 |----------|-----------|-----------|-----------|-----------|
-|1.687   |0.449   |2.332   |0.429   |Slight-Right-Turn   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+|  1.687   |   0.449   |   2.332   |   0.429   |Slight-Right-Turn|
+|  0.914   |   0.632   |   2.536   |   1.123   |Move-Forward|
+|  0.830   |   0.660   |   2.475   |   1.211   |Sharp-Right-Turn|
+|  1.158   |   2.295   |   1.385   |   2.366   |Slight-Left-Turn|
+
 
 #### File: sensorreadings2.csv:
 SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)\
