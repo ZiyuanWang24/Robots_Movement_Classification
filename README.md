@@ -60,8 +60,8 @@ Neural networks, also known as artificial neural networks (ANNs) or simulated ne
 ### 5.	Gaussian Naive Bayes:
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
 
-<img src="doc/img/MLComparison.png" height="356" width="352" align=right></img>
-<img src="doc/img/Knn.png" height="339" width="321" align=right></img>
+<img src="doc/img/MLComparison.png" height="356" width="352" align=center></img>
+<img src="doc/img/Knn.png" height="339" width="321" align=center></img>
 
 Through our testing with the data we use, KNN Classification got the highest accuracy of 98% in all three kinds of datasets. Figure 1 shows the comparison for all five machine learning algorithms. We can see clearly the different of the accuracy rate of these 5 algorithms. Figure2 shows the accuracy rate and confusion matrix of KNN Classification.
 
@@ -75,31 +75,31 @@ iii.	The third one contains only the front and left simplified distances and the
 
 ### Content
 #### File sensorreadings24.csv:
-•	US1: ultrasound sensor at the front of the robot (reference angle: 180°) - (numeric: real)
-•	US2: ultrasound reading (reference angle: -165°) - (numeric: real)
-•	US3: ultrasound reading (reference angle: -150°) - (numeric: real)
-•	US4: ultrasound reading (reference angle: -135°) - (numeric: real)
-•	US5: ultrasound reading (reference angle: -120°) - (numeric: real)
-•	US6: ultrasound reading (reference angle: -105°) - (numeric: real)
-•	US7: ultrasound reading (reference angle: -90°) - (numeric: real)
-•	US8: ultrasound reading (reference angle: -75°) - (numeric: real)
-•	US9: ultrasound reading (reference angle: -60°) - (numeric: real)
-•	US10: ultrasound reading (reference angle: -45°) - (numeric: real)
-•	US11: ultrasound reading (reference angle: -30°) - (numeric: real)
-•	US12: ultrasound reading (reference angle: -15°) - (numeric: real)
-•	US13: reading of ultrasound sensor situated at the back of the robot (reference angle: 0°) - (numeric: real)
-•	US14: ultrasound reading (reference angle: 15°) - (numeric: real)
-•	US15: ultrasound reading (reference angle: 30°) - (numeric: real)
-•	US16: ultrasound reading (reference angle: 45°) - (numeric: real)
-•	US17: ultrasound reading (reference angle: 60°) - (numeric: real)
-•	US18: ultrasound reading (reference angle: 75°) - (numeric: real)
-•	US19: ultrasound reading (reference angle: 90°) - (numeric: real)
-•	US20: ultrasound reading (reference angle: 105°) - (numeric: real)
-•	US21: ultrasound reading (reference angle: 120°) - (numeric: real)
-•	US22: ultrasound reading (reference angle: 135°) - (numeric: real)
-•	US23: ultrasound reading (reference angle: 150°) - (numeric: real)
-•	US24: ultrasound reading (reference angle: 165°) - (numeric: real)
-•	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+###### US1: ultrasound sensor at the front of the robot (reference angle: 180°) - (numeric: real)
+###### US2: ultrasound reading (reference angle: -165°) - (numeric: real)
+###### US3: ultrasound reading (reference angle: -150°) - (numeric: real)
+###### US4: ultrasound reading (reference angle: -135°) - (numeric: real)
+###### US5: ultrasound reading (reference angle: -120°) - (numeric: real)
+###### US6: ultrasound reading (reference angle: -105°) - (numeric: real)
+###### US7: ultrasound reading (reference angle: -90°) - (numeric: real)
+###### US8: ultrasound reading (reference angle: -75°) - (numeric: real)
+###### US9: ultrasound reading (reference angle: -60°) - (numeric: real)
+###### US10: ultrasound reading (reference angle: -45°) - (numeric: real)
+###### US11: ultrasound reading (reference angle: -30°) - (numeric: real)
+###### US12: ultrasound reading (reference angle: -15°) - (numeric: real)
+###### US13: reading of ultrasound sensor situated at the back of the robot (reference angle: 0°) - (numeric: real)
+###### US14: ultrasound reading (reference angle: 15°) - (numeric: real)
+###### US15: ultrasound reading (reference angle: 30°) - (numeric: real)
+###### US16: ultrasound reading (reference angle: 45°) - (numeric: real)
+###### US17: ultrasound reading (reference angle: 60°) - (numeric: real)
+###### US18: ultrasound reading (reference angle: 75°) - (numeric: real)
+###### US19: ultrasound reading (reference angle: 90°) - (numeric: real)
+###### US20: ultrasound reading (reference angle: 105°) - (numeric: real)
+###### US21: ultrasound reading (reference angle: 120°) - (numeric: real)
+###### US22: ultrasound reading (reference angle: 135°) - (numeric: real)
+###### US23: ultrasound reading (reference angle: 150°) - (numeric: real)
+###### US24: ultrasound reading (reference angle: 165°) - (numeric: real)
+###### Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 
 #### File: sensorreadings4.csv:
 •	SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
