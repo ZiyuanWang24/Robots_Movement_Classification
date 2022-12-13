@@ -86,9 +86,9 @@ LR: Linear Regression.\
 
 ### Step 3
 Enter the four distances from ultrasound sensors. The determined action will show on the terminal.\
-<img src="doc/img/step2_1_dis.png" height="200" width="350" align=right></img>
+<img src="doc/img/step2_1_dis.png" height="200" width="350" align=center></img>\
 The distances will show on the simulation as well.\
-<img src="doc/img/step3_showdis.png" height="200" width="350" align=right></img>
+<img src="doc/img/step3_showdis.png" height="200" width="350" align=center></img>
 
 ### Step 4
 The car in the simulation will move based on the determined action.\
