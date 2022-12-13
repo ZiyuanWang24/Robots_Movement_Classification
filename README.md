@@ -82,7 +82,7 @@ GNB: Gaussian Naive Bayes.\
 NN: Neural Network.\
 SVM: Support Vector Machines.\
 LR: Linear Regression.\
-<img src="doc/img/step1_pickModel.png" height="20" width="160" align=center></img>
+<img src="doc/img/step1_pickModel.png" height="20" width="200" align=center></img>
 
 ### Step 3
 Enter the four distances from ultrasound sensors. The determined action will show on the terminal.\
