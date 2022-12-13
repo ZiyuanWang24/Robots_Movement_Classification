@@ -74,7 +74,7 @@ We create a car simulation based on the [car racing](https://www.gymlibrary.dev/
 ### Step 1
 Run the example python script.
 ```
-python3 python3 exp_automobile.py
+python3 exp_automobile.py
 ```
 ### Step 2
 Select one of the trained models.\
