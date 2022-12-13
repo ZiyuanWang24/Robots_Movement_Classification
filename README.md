@@ -125,3 +125,14 @@ Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/
 #### 1.user will uopload their distance or supersound data (.CSV) to the XXX.
 #### 2.based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.
 #### 3.The result will be print out.
+
+## Appendix
+### test
+The codes were passed through smoke test, one shot test, and edge test.
+### Pylint
+The codes were made into PEP8 compliant with pylint.
+### Bug report
+
+### Extensions
+
+### Contributions
