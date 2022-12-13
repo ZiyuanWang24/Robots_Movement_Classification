@@ -102,15 +102,16 @@ iii.	The third one contains only the front and left simplified distances and the
 ###### Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 
 #### File: sensorreadings4.csv:
-•	SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
-•	SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
-•	SD_right: minimum sensor reading within a 60 degree arc located at the right of the robot - (numeric: real)
-•	SD_back: minimum sensor reading within a 60 degree arc located at the back of the robot - (numeric: real)
-•	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+###### SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
+###### SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
+###### SD_right: minimum sensor reading within a 60 degree arc located at the right of the robot - (numeric: real)
+###### SD_back: minimum sensor reading within a 60 degree arc located at the back of the robot - (numeric: real)
+###### Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+
 #### File: sensorreadings2.csv:
-•	SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
-•	SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
-•	Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+###### SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)
+###### SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)
+###### Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 
 <img src="doc/img/Datasets.png" height="322" width="780" align=right></img>
 
