@@ -135,6 +135,12 @@ SD_left: minimum sensor reading within a 60 degree arc located at the left of th
 SD_right: minimum sensor reading within a 60 degree arc located at the right of the robot - (numeric: real)\
 SD_back: minimum sensor reading within a 60 degree arc located at the back of the robot - (numeric: real)\
 Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
+###### Datasets Example in sensorreadings4.csv
+| SD_front |  SD_left  |  SD_right |  SD_back  |  Classes  |
+|----------|-----------|-----------|-----------|-----------|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 
 #### File: sensorreadings2.csv:
 SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)\
@@ -142,15 +148,10 @@ SD_left: minimum sensor reading within a 60 degree arc located at the left of th
 Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn\
 
 <img src="doc/img/Datasets.png" height="322" width="780" align=center></img>
-###### Datasets Example in sensorreadings4.csv
+
 
 ##### These datasets were downlaoded from the UCI Machine Learning Repository
 Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. 
-
-## Usage
-1.user will uopload their distance or supersound data (.CSV) to the XXX.\\
-2.based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.\\
-3.The result will be print out.\\
 
 ## Appendix
 ### test
