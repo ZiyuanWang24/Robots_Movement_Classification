@@ -147,10 +147,7 @@ Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 #### File: sensorreadings2.csv:
 SD_front: minimum sensor reading within a 60 degree arc located at the front of the robot - (numeric: real)\
 SD_left: minimum sensor reading within a 60 degree arc located at the left of the robot - (numeric: real)\
-Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn\
-
-<img src="doc/img/Datasets.png" height="322" width="780" align=center></img>
-
+Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 
 ##### These datasets were downlaoded from the UCI Machine Learning Repository
 Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. 
