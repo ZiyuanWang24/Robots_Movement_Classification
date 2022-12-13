@@ -79,19 +79,19 @@ python3 python3 exp_automobile.py
 ### Step 2
 Select one of the trained models.\
 GNB: Gaussian Naive Bayes.\
-NN: Neural Network.
-SVM: Support Vector Machines.
-LR: Linear Regression.
-<img src="doc/img/step1_pickModel.png" height="200" width="350" align=right></img>
+NN: Neural Network.\
+SVM: Support Vector Machines.\
+LR: Linear Regression.\
+<img src="doc/img/step1_pickModel.png" height="20" width="35" align=center></img>
 
 ### Step 3
-Enter the four distances from ultrasound sensors. The determined action will show on the terminal.
+Enter the four distances from ultrasound sensors. The determined action will show on the terminal.\
 <img src="doc/img/step2_1_dis.png" height="200" width="350" align=right></img>
-The distances will show on the simulation as well.
+The distances will show on the simulation as well.\
 <img src="doc/img/step3_showdis.png" height="200" width="350" align=right></img>
 
 ### Step 4
-The car in the simulation will move based on the determined action.
+The car in the simulation will move based on the determined action.\
 <img src="doc/img/step3_turnleft.png" height="200" width="350" align=right></img>
 
 ## About Datasets:
