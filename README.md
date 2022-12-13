@@ -11,7 +11,7 @@ Our algorithm will identify the automotive vehicle direction. During the designi
 
 The algorithm is to use the ultrasonic sensor data or distance reading data from the wall-followed robot to train different models. The trained model can be used to determine the position and orientation direction. The model that has the highest prediction accuracy is selected after comparing the results of different machine learning models.
 
-<img src="doc/img/proteus.png" height="100" width="150" align=left></img>
+<img src="doc/img/proteus.png" height="120" width="150" align=left></img>
 One of use case is smart warehouse. There are autopilot robotics designed to deliver package with the setting path. Based on the data collection, the monitoring system could have the direction predicted by the classification model to determine if the automotive vehicle followed the setting or not. Similarly, any industry that uses a robot running in some fixed routes, can locate their robots depend on our trained model.
 
 
