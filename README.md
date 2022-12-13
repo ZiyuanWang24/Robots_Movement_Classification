@@ -66,6 +66,33 @@ Through our testing with the data we use, KNN Classification got the highest acc
 
 <img src="doc/img/5MLConfusionMX.png" height="200" width="1000" align=center></img>
 
+## Example: Action Planning of Autonomous Vehicle
+The current vehicle is normally equipped with ultrasound sound sensors. It can determines the distances between the objectives
+and vehicle. The distances data can be used to determine whether the vehicle is safe or not. With multiple ultrasound sensors, 
+the vehicle will have the ability to determine where the wall is and even figure out whether to turn left or turn right. However, it could be unstable if we simply develop a algorithm to analyze the data of ultrasound sensors and determine the action in real time since it could have high computational cost and the algorithm could miss some special cases. So we could implement the pre-trained model from wall-followed robots.
+We create a car simulation based on the [car racing](https://www.gymlibrary.dev/environments/box2d/car_racing/). Here is how it works:
+### Step 1
+Run the example python script.
+```
+python3 python3 exp_automobile.py
+```
+### Step 2
+Select one of the trained models.
+GNB: Gaussian Naive Bayes.
+NN: Neural Network.
+SVM: Support Vector Machines.
+LR: Linear Regression.
+<img src="doc/img/step1_pickModel.png" height="200" width="350" align=right></img>
+
+### Step 3
+Enter the four distances from ultrasound sensors. The determined action will show on the terminal.
+<img src="doc/img/step2_1_dis.png" height="200" width="350" align=right></img>
+The distances will show on the simulation as well.
+<img src="doc/img/step3_showdis.png" height="200" width="350" align=right></img>
+
+### Step 4
+The car in the simulation will move based on the determined action.
+<img src="doc/img/step3_turnleft.png" height="200" width="350" align=right></img>
 
 ## About Datasets:
 •	The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 
