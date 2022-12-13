@@ -168,7 +168,8 @@ The codes were passed through smoke test, one shot test, and edge test.
 ### Pylint
 The codes were made into PEP8 compliant with pylint.
 ### Bug report
-
+We look forward to continually improving the program, so if you encounter any bugs in its operation, please give us a feedback with the  [link] (https://forms.gle/wNQvTH98ypNPXhJ38)
 ### Extensions
-
+If you expect to continue applying our program with different inputs (e.g. more accurate sensors), please give us your feedback! Detail your requirements in this [link] (https://forms.gle/wNQvTH98ypNPXhJ38) and attach the necessary training data.
 ### Contributions
+[1] Car animation source code： https://www.gymlibrary.dev/environments/box2d/car_racing/
