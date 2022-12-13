@@ -53,7 +53,7 @@ Different machine learning algorithms will have different effects on different p
 The Ridge regressor has a classifier variant: RidgeClassifier. This classifier first converts binary targets to {-1, 1} and then treats the problem as a regression task, optimizing the same objective as above. The predicted class corresponds to the sign of the regressor’s prediction. For multiclass classification, the problem is treated as multi-output regression, and the predicted class corresponds to the output with the highest value.
 ### 2.	Support Vector Machine: 
 Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers’ detection.
-<img src="doc/img/MLComparison.png" height="356" width="352" align=center></img>
+
 ### 3.	KNN Classification: 
 Neighbors-based classification is a type of instance-based learning or non-generalizing learning: it does not attempt to construct a general internal model, but simply stores instances of the training data. Classification is computed from a simple majority vote of the nearest neighbors of each point: a query point is assigned the data class which has the most representatives within the nearest neighbors of the point.
 ### 4.	Neutral Network:
@@ -61,7 +61,7 @@ Neural networks, also known as artificial neural networks (ANNs) or simulated ne
 ### 5.	Gaussian Naive Bayes:
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
 
-<img src="doc/img/63a3efed70523fc6b66f1cab0703cf2.png" height="200" width="1000" align=center></img>
+<img src="doc/img/MLComparison.png" height="80%" width="80%" align=center></img>
 
 Through our testing with the data we use, KNN Classification got the highest accuracy of 98% in all three kinds of datasets. Figure 1 shows the comparison for all five machine learning algorithms. We can see clearly the different of the accuracy rate of these 5 algorithms. Figure2 shows the accuracy rate and confusion matrix of KNN Classification.
 
