@@ -138,7 +138,7 @@ Classes: Move-Forward, Slight-Right-Turn, Sharp-Right-Turn, Slight-Left-Turn
 ###### Datasets Example in sensorreadings4.csv
 | SD_front |  SD_left  |  SD_right |  SD_back  |  Classes  |
 |----------|-----------|-----------|-----------|-----------|
-|   |   |   |   |   |
+|1.687   |0.449   |2.332   |0.429   |Slight-Right-Turn   |
 |   |   |   |   |   |
 |   |   |   |   |   |
 
