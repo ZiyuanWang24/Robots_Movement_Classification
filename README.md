@@ -26,6 +26,7 @@ One of use case is smart warehouse. There are autopilot robotics designed to del
 ├── doc
 │   ├── design.md
 │   └── Comparison_of_classifiers.pdf
+│   └── Robot movement classification Team Poster.pdf
 │   └── img
 ├── draft_code
 │   ├── SVM_GaussianGNB_data24.ipynb
