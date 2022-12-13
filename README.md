@@ -122,9 +122,9 @@ iii.	The third one contains only the front and left simplified distances and the
 Lichman, M. (2013). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. 
 
 ## Usage
- 1.user will uopload their distance or supersound data (.CSV) to the XXX.
- 2.based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.
- 3.The result will be print out.
+ 1.user will uopload their distance or supersound data (.CSV) to the XXX.//
+ 2.based on the previous trained machine learning modle, it will analyze the data to generate the turning direction.//
+ 3.The result will be print out.//
 
 ## Appendix
 ### test
