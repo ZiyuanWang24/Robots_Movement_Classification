@@ -7,6 +7,8 @@ import sklearn
 import unittest
 from src import SVM_learning
 from src import knnclassifier
+from src import NNetclassifier
+from src import Linclassifier
 
 
 
@@ -67,5 +69,34 @@ class test(unittest.TestCase):
             datasets3 = pd.read_csv('test/test_2.csv')
             knnclassifier(datasets3)
 
+    
+    def test_smoke_nnet(self):
+        datasets1 = pd.read_csv('test/test_4.csv')
+        NNetclassifier(datasets1)
 
+    def test_oneshot1_nnet(self):
+        datasets2 = pd.read_csv('test/test_4.csv')
+        test1 = NNetclassifier(datasets2)
+        ans1 = pd.read_csv('test/test_4.csv',usecols=['Sharp-Right-Turn'])
+        compare(test1, ans1)
+        
+    def test_positional_indexers_are_outofbounds_nnet(self):
+        with self.assertRaises(IndexError):
+            datasets3 = pd.read_csv('test/test_2.csv')
+            NNetclassifier(datasets3)
+    
+    def test_smoke_lin(self):
+        datasets1 = pd.read_csv('test/test_4.csv')
+        Linclassifier(datasets1)
+
+    def test_oneshot1_lin(self):
+        datasets2 = pd.read_csv('test/test_4.csv')
+        test1 = Linclassifier(datasets2)
+        ans1 = pd.read_csv('test/test_4.csv',usecols=['Sharp-Right-Turn'])
+        compare(test1, ans1)
+        
+    def test_positional_indexers_are_outofbounds_lin(self):
+        with self.assertRaises(IndexError):
+            datasets3 = pd.read_csv('test/test_2.csv')
+            Linclassifier(datasets3)
 
