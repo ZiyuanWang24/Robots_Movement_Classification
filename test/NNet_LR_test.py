@@ -9,6 +9,7 @@ import pandas as pd
 import sklearn
 import unittest
 from src import NNetclassifier
+from src import Linclassifier
 class Test_NNet_LR(unittest.TestCase):
     
     def test_smoke(self):
