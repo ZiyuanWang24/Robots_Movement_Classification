@@ -25,13 +25,12 @@ One of use case is smart warehouse. There are autopilot robotics designed to del
 │   └── sensor_readings_2.csv
 ├── doc
 │   ├── design.md
+│   └── ComponentSpecification.md
+│   └── FunctionalSpecification.md
 │   └── Comparison_of_classifiers.pdf
 │   └── Robot movement classification Team Poster.pdf
 │   └── img
 ├── draft_code
-│   ├── SVM_GaussianGNB_data24.ipynb
-│   ├── SVM_GaussianGNB_data4.ipynb
-│   └── neuralnet_lineaerclassifer.py
 ├── src
 │   ├── __init__.py
 │   └── Classifiers.py
