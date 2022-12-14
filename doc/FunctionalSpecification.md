@@ -1,11 +1,11 @@
 # Background
 <img src="img/settingpath.png" height="200" width="300" align=right></img>
 The project compared five different clssification algorithms to train a model that can predict the robots movement by processing the ultrasound sensors data. The model can be further implemented on Simultaneous Localization and Mapping (SLAM) and Motion Planning of the autopilot vehicle.  
-# User profile. 
+# User profile
 Our algorithm will identify the automotive vehicle direction. During the designing of the autopilot vehicle’s road mapping. Engineers could collect the car’s distance or ultrasound sensor data at turning corners. The suggested turning direction is then determined based on the data.
 One of use case is smart warehouse. There are autopilot robotics designed to deliver package with the setting path. Based on the data collection, the monitoring system could have the direction predicted by the classification model to determine if the automotive vehicle followed the setting or not. Similarly, any industry that uses a robot running in some fixed routes, can locate their robots depend on our trained model.
 # Data sources. 
-<img src="doc/img/Scitos-G5-with-its-Human-Machine-Interface-and-RoboHead-in-the-institute-computer.png" height="300" width="150" align=right></img>
+<img src="img/Scitos-G5-with-its-Human-Machine-Interface-and-RoboHead-in-the-institute-computer.png" height="300" width="150" align=right></img>
 •	The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 rounds. To navigate, the robot uses 24 ultrasound sensors arranged circularly around its "waist". The numbering of the ultrasound sensors starts at the front of the robot and increases in clockwise direction.\
 •	The provided files comprise three diferent data sets.\
   i.	The first one contains the raw values of the measurements of all 24 ultrasound sensors and the corresponding class label (Moving forward, turning left, etc). Sensor readings are sampled at a rate of 9 samples per second.\
