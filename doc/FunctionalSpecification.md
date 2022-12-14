@@ -8,9 +8,9 @@ One of use case is smart warehouse. There are autopilot robotics designed to del
 <img src="img/Scitos-G5-with-its-Human-Machine-Interface-and-RoboHead-in-the-institute-computer.png" height="300" width="150" align=right></img>
 •	The data were collected as the SCITOS G5 navigated through the room following the wall in a clockwise direction, for 4 rounds. To navigate, the robot uses 24 ultrasound sensors arranged circularly around its "waist". The numbering of the ultrasound sensors starts at the front of the robot and increases in clockwise direction.\
 •	The provided files comprise three diferent data sets.\
-&nbsp;   i.	The first one contains the raw values of the measurements of all 24 ultrasound sensors and the corresponding class label (Moving forward, turning left, etc). Sensor readings are sampled at a rate of 9 samples per second.\
-&nbsp;   ii.	The second one contains four sensor readings named 'simplified distances' and the corresponding class label l (Moving forward, turning left, etc). These simplified distances are referred to as the 'front distance', 'left distance', 'right distance' and 'back distance'. They consist, respectively, of the minimum sensor readings among those within 60 degree arcs located at the front, left, right and back parts of the robot.\
-&nbsp;   iii.	The third one contains only the front and left simplified distances and the corresponding class labell (Moving forward, turning left, etc).
+&emsp;   i.	The first one contains the raw values of the measurements of all 24 ultrasound sensors and the corresponding class label (Moving forward, turning left, etc). Sensor readings are sampled at a rate of 9 samples per second.\
+&emsp;   ii.	The second one contains four sensor readings named 'simplified distances' and the corresponding class label l (Moving forward, turning left, etc). These simplified distances are referred to as the 'front distance', 'left distance', 'right distance' and 'back distance'. They consist, respectively, of the minimum sensor readings among those within 60 degree arcs located at the front, left, right and back parts of the robot.\
+&emsp;   iii.	The third one contains only the front and left simplified distances and the corresponding class labell (Moving forward, turning left, etc).
 ## Content
 ### File sensorreadings24.csv:
 US1: ultrasound sensor at the front of the robot (reference angle: 180°) - (numeric: real)\
