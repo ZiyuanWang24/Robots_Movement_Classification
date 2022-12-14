@@ -26,3 +26,17 @@ Through our testing with the data we use, KNN Classification got the highest acc
 <img src="img/5MLConfusionMX.png" height="200" width="1000" align=center></img>
 
 # Preliminary plan
+Tasks ordered by priority:
+## Classification algorithm function:
+1. robots_movement_classifier.knnclassifier_learning()\
+2. robots_movement_classifier.SVM_learning()\
+3. robots_movement_classifier.GaussianNB_learning()\
+4. robots_movement_classifier.Linear_Classifier()\
+5. robots_movement_classifier.NeuralNet_Classifier():
+## A robots_movement_classifier class file:
+Wrape all the function into a class file.
+## Demo file:
+Create a jupyter note book file that includes all the trained model and results.
+## Example:
+Create a simulation program where the action of the car in the simulation can be determined by the selected trained model.
+The input is ultrasound data.
