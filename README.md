@@ -75,7 +75,7 @@ Neural networks, also known as artificial neural networks (ANNs) or simulated ne
 Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. GaussianNB implements the Gaussian Naive Bayes algorithm for classification.
 <img src="doc/img/MLComparison.png" height="400" width="400" align=right></img>
 ### 6. Final Results
-Through our testing with the data we use, KNN Classification got the highest accuracy of 98% in all three kinds of datasets. The following figures shows the comparison for all five machine learning algorithms. We can see clearly the different of the accuracy rate of these 5 algorithms. Another figure shows the accuracy rate and confusion matrix of all 5 Machine Learning Algorithm.
+Through our testing with the data we use, KNN Classification and Nerual Network got the highest accuracy of 97% and 98% in all three kinds of datasets. The following figures shows the comparison for all five machine learning algorithms. We can see clearly the different of the accuracy rate of these 5 algorithms. Another figure shows the accuracy rate and confusion matrix of all 5 Machine Learning Algorithm.
 <img src="doc/img/5MLConfusionMX.png" height="200" width="1000" align=center></img>
 
 ## Example: Action Planning of Autonomous Vehicle
